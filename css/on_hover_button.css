@@ -1,9 +1,6 @@
 i.better_search{
-  /*background:url("images/search-icon2.svg") center center no-repeat #fff;*/
-  background-color:#333;
-  -webkit-mask-image: url("images/search-icon1.svg");
-  mask-image: url("images/search-icon1.svg");
-  height:1em;
+  background:url("images/search-icon.svg") center center no-repeat;  
+  height:1.1em;
   width:1em;
   font-style: normal;
   font-weight: normal;
@@ -13,14 +10,12 @@ i.better_search{
 } 
 
 #search-block-form{
-  overflow: hidden;
-  width: 300px;
+  overflow: hidden;  
   vertical-align: middle;
   white-space: nowrap;
 }
 
-.form-item-search-block-form input.form-text{
-  width: 300px;
+.form-item-search-block-form input.form-text{  
   height: 50px;
   background: #2b303b; /* Search field BG */
   border: none;
@@ -31,16 +26,16 @@ i.better_search{
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; 
+  z-index:100;
 }
 
 #search-block-form .icon{
   border: none;
-  background: #232833;
+
   height: 50px;
   width: 50px;
   color: #4f5b66;
-  opacity: 0;
-  font-size: 10pt;
+  opacity: 0;  
  
   -webkit-transition: all .55s ease;
   -moz-transition: all .55s ease;

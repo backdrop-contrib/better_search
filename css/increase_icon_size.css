@@ -1,8 +1,5 @@
 i.better_search{
-  /*background:url("images/search-icon2.svg") center center no-repeat #fff;*/
-  background-color:#ccc;
-  -webkit-mask-image: url("images/search-icon1.svg");
-  mask-image: url("images/search-icon1.svg");
+  background:url("images/search-icon.svg") center center no-repeat;  
   height:1em;
   width:1em;
   font-style: normal;
@@ -39,8 +36,9 @@ i.better_search{
   margin-top: 17px;
   z-index: 1;
   color: #4f5b66;
+  left:0;
  
-   -webkit-transition: all .55s ease;
+  -webkit-transition: all .55s ease;
   -moz-transition: all .55s ease;
   -ms-transition: all .55s ease;
   -o-transition: all .55s ease;

@@ -1,8 +1,5 @@
 i.better_search{
-  /*background:url("images/search-icon1.svg") center center no-repeat #fff;*/
-  background-color:#fff;
-  -webkit-mask-image: url("images/search-icon1.svg");
-  mask-image: url("images/search-icon1.svg");
+  background:url("images/search-icon.svg") center center no-repeat;  
   height:1em;
   width:1em;
   font-style: normal;
@@ -10,7 +7,7 @@ i.better_search{
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   display:inline-block;
-}
+}  
 
 #search-block-form{
   width: 300px;
@@ -18,7 +15,7 @@ i.better_search{
   white-space: nowrap;
   position: relative;
 }
-
+ 
 .form-item-search-block-form input.form-text{
   width: 50px;
   height: 50px;
@@ -47,6 +44,7 @@ i.better_search{
   margin-top: 17px;
   z-index: 1;
   color: #4f5b66;
+  left:0;
 }
 
 .form-item-search-block-form input:-webkit-input-placeholder {color: #65737e;}

@@ -1,14 +1,12 @@
 i.better_search{  
-  background-color:#ccc;
-  -webkit-mask-image: url("images/search-icon1.svg");
-  mask-image: url("images/search-icon1.svg");
+  background:url("images/search-icon.svg") center center no-repeat;  
   height:1em;
   width:1em;
   font-style: normal;
   font-weight: normal;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  display:inline-block;  
+  display:inline-block;
 }
 
 #search-block-form{
@@ -17,7 +15,6 @@ i.better_search{
   white-space: nowrap;
   position: relative;
 }
-
 
 
 .form-item-search-block-form input{
@@ -32,7 +29,7 @@ i.better_search{
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  
+  border:1px solid #ccc;
   -webkit-transition: background .55s ease;
   -moz-transition: background .55s ease;
   -ms-transition: background .55s ease;
