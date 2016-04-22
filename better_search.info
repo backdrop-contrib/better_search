@@ -1,0 +1,7 @@
+name = Better Search Block
+description = Provides better looking theming for the Drupal search block.
+core = 7.x
+package = search
+dependencies[] = search
+
+configure = admin/config/search/better-search
