@@ -20,6 +20,28 @@ function better_search_admin_form() {
     '#options' => $options,
     '#description' => t('Select the theme to use for the search block.'),    
   );
+  
+  $options = array(
+    10 => '10',
+    12 => '12',
+    14 => '14',
+    16 => '16',
+    18 => '18',
+    20 => '20',
+    22 => '22',
+    24 => '24',
+    26 => '26',
+    28 => '28',
+    30 => '30',
+  );
+  
+  $form['theme']['size'] = array(
+    '#type' => 'select', 
+    '#title' => t('Search Box Size'), 
+    '#default_value' => variable_get('size', 20),
+    '#options' => $options,
+  );
+
   return system_settings_form($form);
 
 }

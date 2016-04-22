@@ -17,6 +17,7 @@ function better_search_menu() {
 } 
 
 function better_search_form_search_block_form_alter(&$form, &$form_state, $form_id){
+ 
   $path = drupal_get_path('module', 'better_search');  
   $theme = variable_get('theme', 0);
   switch ($theme) {
@@ -39,8 +40,8 @@ function better_search_form_search_block_form_alter(&$form, &$form_state, $form_
     $form['search_block_form']['#suffix'] = ' <button class="icon"><i class="better_search"></i></button>';  
   }else{
     $form['search_block_form']['#prefix'] = '<div class="icon"><i class="better_search"></i></div>';  
-  }
+  }  
   $form['search_block_form']['#attributes']['placeholder'] = t( 'search' );
   $form['actions']['#attributes']['class'][] = 'element-invisible';
- 
+  $form['search_block_form']['#size'] = variable_get('size', 20);
 }

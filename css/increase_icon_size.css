@@ -12,15 +12,13 @@ i.better_search{
   display:inline-block;
 }
 
-#search-block-form{
-  width: 300px;
+#search-block-form{  
   vertical-align: middle;
   white-space: nowrap;
   position: relative;
 }
 
-.form-item-search-block-form input.form-text{
-  width: 300px;
+.form-item-search-block-form input.form-text{  
   height: 50px;
   background: #2b303b;
   border: none;
