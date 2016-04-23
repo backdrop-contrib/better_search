@@ -41,7 +41,7 @@ function better_search_form_search_block_form_alter(&$form, &$form_state, $form_
   }else{
     $form['search_block_form']['#prefix'] = '<div class="icon"><i class="better_search"></i></div>';  
   }  
-  $form['search_block_form']['#attributes']['placeholder'] = t( 'search' );
+  $form['search_block_form']['#attributes']['placeholder'] = t(variable_get('placeholder_text', 'search'));
   $form['actions']['#attributes']['class'][] = 'element-invisible';
   $form['search_block_form']['#size'] = variable_get('size', 20);
 }

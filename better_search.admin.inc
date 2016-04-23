@@ -1,6 +1,21 @@
 <?php
 
-function better_search_admin_form() {  
+function better_search_admin_form() {
+  $form['text'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Better Search Text Options'),
+  );
+  
+  $form['text']['placeholder_text'] = array(
+    '#type' => 'textfield', 
+    '#title' => t('Placeholder Text'),
+    '#description' => t('Enter the text to be displayed in the search field (placeholder text)'),
+    '#default_value' => variable_get('placeholder_text', 'search'),
+    '#size' => 30, 
+    '#maxlength' => 60,
+    '#required' => TRUE,
+  );
+    
   $form['theme'] = array(
     '#type' => 'fieldset',
     '#title' => t('Better Search Theme Options'),
