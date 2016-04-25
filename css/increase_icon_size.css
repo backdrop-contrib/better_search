@@ -16,24 +16,24 @@ i.better_search{
 }
 
 .form-item-search-block-form input.form-text{  
-  height: 50px;
-  background: #2b303b;
+  height: 3em;
+  background: #666; 
   border: none;
-  font-size: 10pt;
+  font-size: .8em;
   float: left;
   color: #262626;
   padding-left: 45px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  color: #fff;
+  color: #fff;  
 }
 
 #search-block-form .icon{
   position: absolute;
   top: 50%;
-  margin-left: 17px;
-  margin-top: 17px;
+  margin-left: 1em;
+  margin-top: .75em;
   z-index: 1;
   color: #4f5b66;
   left:0;
@@ -61,12 +61,12 @@ i.better_search{
 }
  
 #search-block-form:hover .icon{
-   margin-top: 16px;
+  margin-top: .75em;
   color: #93a2ad;
  
-  -webkit-transform:scale(1.5); /* Safari and Chrome */
-  -moz-transform:scale(1.5); /* Firefox */
-  -ms-transform:scale(1.5); /* IE 9 */
-  -o-transform:scale(1.5); /* Opera */
-   transform:scale(1.5);
+  -webkit-transform:scale(1.25); /* Safari and Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* IE 9 */
+  -o-transform:scale(1.25); /* Opera */
+   transform:scale(1.25);
 }
