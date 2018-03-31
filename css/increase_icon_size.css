@@ -1,23 +1,23 @@
-i.better_search{
-  background:url("images/search-icon.svg") center center no-repeat;  
-  height:1em;
-  width:1em;
+i.better_search {
+  background: url("images/search-icon.svg") center center no-repeat;
+  height: 1em;
+  width: 1em;
   font-style: normal;
   font-weight: normal;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  display:inline-block;
+  display: inline-block;
 }
 
-#search-block-form{  
+#search-block-form {
   vertical-align: middle;
   white-space: nowrap;
   position: relative;
 }
 
-.form-item-search-block-form input.form-text{  
+.form-item-search-block-form input.form-text {
   height: 3em;
-  background: #666; 
+  background: #666;
   border: none;
   font-size: .8em;
   float: left;
@@ -26,18 +26,17 @@ i.better_search{
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  color: #fff;  
+  color: #fff;
 }
 
-#search-block-form .icon{
+#search-block-form .icon {
   position: absolute;
   top: 50%;
   margin-left: 1em;
   margin-top: .75em;
   z-index: 1;
   color: #4f5b66;
-  left:0;
- 
+  left: 0;
   -webkit-transition: all .55s ease;
   -moz-transition: all .55s ease;
   -ms-transition: all .55s ease;
@@ -45,25 +44,31 @@ i.better_search{
   transition: all .55s ease;
 }
 
-.form-item-search-block-form input:-webkit-input-placeholder {color: #65737e;}
-  
-.form-item-search-block-form input:-moz-placeholder {color: #65737e;}
- 
-.form-item-search-block-form input:-ms-input-placeholder {color: #65737e;}
- 
+.form-item-search-block-form input:-webkit-input-placeholder {
+  color: #65737e;
+}
+
+.form-item-search-block-form input:-moz-placeholder {
+  color: #65737e;
+}
+
+.form-item-search-block-form input:-ms-input-placeholder {
+  color: #65737e;
+}
+
 .form-item-search-block-form input.form-text:focus,
-.form-item-search-block-form input.form-text:active{
- outline:none;
+.form-item-search-block-form input.form-text:active {
+ outline: none;
 }
- 
-.form-item-search-block-form:hover input.form-text{  
-  cursor: pointer; cursor: hand; 
+
+.form-item-search-block-form:hover input.form-text {
+  cursor: pointer;
+  cursor: hand;
 }
- 
-#search-block-form:hover .icon{
+
+#search-block-form:hover .icon {
   margin-top: .75em;
   color: #93a2ad;
- 
   -webkit-transform:scale(1.25); /* Safari and Chrome */
   -moz-transform:scale(1.25); /* Firefox */
   -ms-transform:scale(1.25); /* IE 9 */

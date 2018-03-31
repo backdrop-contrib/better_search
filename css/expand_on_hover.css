@@ -1,22 +1,22 @@
-i.better_search{
-  background:url("images/search-icon.svg") center center no-repeat;  
-  height:1em;
-  width:1em;
+i.better_search {
+  background: url("images/search-icon.svg") center center no-repeat;
+  height: 1em;
+  width: 1em;
   font-style: normal;
   font-weight: normal;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   display:inline-block;
-}  
+}
 
-#search-block-form{
+#search-block-form {
   width: 300px;
   vertical-align: middle;
   white-space: nowrap;
   position: relative;
 }
- 
-.form-item-search-block-form input.form-text{
+
+.form-item-search-block-form input.form-text {
   width: 50px;
   height: 50px;
   background: #2b303b;
@@ -29,7 +29,6 @@ i.better_search{
   -moz-border-radius: 5px;
   border-radius: 5px;
   color: #fff;
- 
   -webkit-transition: width .55s ease;
   -moz-transition: width .55s ease;
   -ms-transition: width .55s ease;
@@ -37,33 +36,40 @@ i.better_search{
   transition: width .55s ease;
 }
 
-#search-block-form .icon{
+#search-block-form .icon {
   position: absolute;
   top: 50%;
   margin-left: 17px;
   margin-top: 17px;
   z-index: 1;
   color: #4f5b66;
-  left:0;
+  left: 0;
 }
 
-.form-item-search-block-form input:-webkit-input-placeholder {color: #65737e;}
-  
-.form-item-search-block-form input:-moz-placeholder {color: #65737e;}
- 
-.form-item-search-block-form input:-ms-input-placeholder {color: #65737e;}
- 
+.form-item-search-block-form input:-webkit-input-placeholder {
+  color: #65737e;
+}
+
+.form-item-search-block-form input:-moz-placeholder {
+  color: #65737e;
+}
+
+.form-item-search-block-form input:-ms-input-placeholder {
+  color: #65737e;
+}
+
 .form-item-search-block-form input.form-text:focus,
-.form-item-search-block-form input.form-text:active{
-  outline:none;
+.form-item-search-block-form input.form-text:active {
+  outline: none;
   width: 300px;
 }
- 
-.form-item-search-block-form:hover input.form-text{
+
+.form-item-search-block-form:hover input.form-text {
   width: 300px;
-  cursor: pointer; cursor: hand; 
+  cursor: pointer;
+  cursor: hand;
 }
- 
-#search-block-form:hover .icon{
+
+#search-block-form:hover .icon {
   color: #93a2ad;
 }
