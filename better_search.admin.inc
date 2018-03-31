@@ -15,7 +15,17 @@ function better_search_admin_form() {
     '#maxlength' => 60,
     '#required' => TRUE,
   );
-    
+
+  $form['text']['placeholder_color'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Placeholder Color'),
+    '#description' => t('Enter the valid hex color code or color name to be displayed in the search field (placeholder text)'),
+    '#default_value' => variable_get('placeholder_color', '#FFFFFF'),
+    '#size' => 30,
+    '#maxlength' => 60,
+    '#required' => TRUE,
+  );
+
   $form['theme'] = array(
     '#type' => 'fieldset',
     '#title' => t('Better Search Theme Options'),
@@ -57,6 +67,16 @@ function better_search_admin_form() {
     '#options' => $options,
   );
 
+  $form['#validate'][] = 'placeholder_color_validate';
   return system_settings_form($form);
 
+}
+
+/**
+ * Validation function for color field.
+ */
+function placeholder_color_validate($form, &$form_state) {
+  if (is_numeric($form_state['values']['placeholder_color'])) {
+    form_set_error('placeholder_color', 'Invalid color name or color code.');
+  }
 }
