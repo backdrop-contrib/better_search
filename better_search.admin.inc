@@ -9,11 +9,13 @@
  * Better search settings form.
  */
 function better_search_admin_form() {
+  $form['#config'] = 'better_search.settings';
   $form['text'] = array(
     '#type' => 'fieldset',
     '#title' => t('Better Search Text Options'),
   );
 
+  // TODO This variable was probably removed in Backdrop without replacement.
   $form['text']['placeholder_text'] = array(
     '#type' => 'textfield',
     '#title' => t('Placeholder Text'),
@@ -24,6 +26,7 @@ function better_search_admin_form() {
     '#required' => TRUE,
   );
 
+  // TODO This variable was probably removed in Backdrop without replacement.
   $form['text']['placeholder_color'] = array(
     '#type' => 'textfield',
     '#title' => t('Placeholder Color'),
@@ -46,12 +49,13 @@ function better_search_admin_form() {
     3 => t('Slide Icon on Hover'),
   );
 
+  // TODO This variable was probably removed in Backdrop without replacement.
   $form['theme']['theme'] = array(
     '#type' => 'radios',
     '#title' => t('Select Theme'),
     '#default_value' => variable_get('theme', 0),
     '#options' => $options,
-    '#description' => t('Select the theme to use for the search block.'),    
+    '#description' => t('Select the theme to use for the search block.'),
   );
 
   $options = array(
@@ -68,6 +72,7 @@ function better_search_admin_form() {
     30 => '30',
   );
 
+  // TODO This variable was probably removed in Backdrop without replacement.
   $form['theme']['size'] = array(
     '#type' => 'select',
     '#title' => t('Search Box Size'),
