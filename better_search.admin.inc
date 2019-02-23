@@ -9,29 +9,28 @@
  * Better search settings form.
  */
 function better_search_admin_form() {
+  $config = config('better_search.settings');
   $form['#config'] = 'better_search.settings';
   $form['text'] = array(
     '#type' => 'fieldset',
     '#title' => t('Better Search Text Options'),
   );
 
-  // TODO This variable was probably removed in Backdrop without replacement.
   $form['text']['placeholder_text'] = array(
     '#type' => 'textfield',
     '#title' => t('Placeholder Text'),
     '#description' => t('Enter the text to be displayed in the search field (placeholder text)'),
-    '#default_value' => variable_get('placeholder_text', 'search'),
+    '#default_value' => $config->get('placeholder_text'),
     '#size' => 30,
     '#maxlength' => 60,
     '#required' => TRUE,
   );
 
-  // TODO This variable was probably removed in Backdrop without replacement.
   $form['text']['placeholder_color'] = array(
     '#type' => 'textfield',
     '#title' => t('Placeholder Color'),
     '#description' => t('Enter the valid hex color code or color name to be displayed in the search field (placeholder text)'),
-    '#default_value' => variable_get('placeholder_color', '#FFFFFF'),
+    '#default_value' => $config->get('placeholder_color'),
     '#size' => 30,
     '#maxlength' => 60,
     '#required' => TRUE,
@@ -49,11 +48,10 @@ function better_search_admin_form() {
     3 => t('Slide Icon on Hover'),
   );
 
-  // TODO This variable was probably removed in Backdrop without replacement.
   $form['theme']['theme'] = array(
     '#type' => 'radios',
     '#title' => t('Select Theme'),
-    '#default_value' => variable_get('theme', 0),
+    '#default_value' => $config->get('theme'),
     '#options' => $options,
     '#description' => t('Select the theme to use for the search block.'),
   );
@@ -72,11 +70,10 @@ function better_search_admin_form() {
     30 => '30',
   );
 
-  // TODO This variable was probably removed in Backdrop without replacement.
   $form['theme']['size'] = array(
     '#type' => 'select',
     '#title' => t('Search Box Size'),
-    '#default_value' => variable_get('size', 20),
+    '#default_value' => $config->get('size'),
     '#options' => $options,
   );
 

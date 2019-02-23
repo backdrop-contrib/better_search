@@ -11,19 +11,21 @@ i.better_search {
 
 #search-block-form {
   width: 300px;
+  max-width: 100%;
   vertical-align: middle;
   white-space: nowrap;
   position: relative;
 }
 
-.form-item-search-block-form input {
+.form-item-search-block-form input.form-search {
   width: 300px;
+  max-width: 100%;
   height: 50px;
   background: #2b303b;
   border: none;
   font-size: 10pt;
   float: right;
-  color: #63717f;
+  color: #fff;
   padding-left: 45px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -36,6 +38,18 @@ i.better_search {
   transition: background .55s ease;
 }
 
+.form-item-search-block-form input.form-search:hover,
+.form-item-search-block-form input.form-search:active,
+.form-item-search-block-form input.form-search:focus {
+  color: #fff;
+  background-color: #586172;
+  -webkit-transition: background 1s ease;
+  -moz-transition: background 1s ease;
+  -ms-transition: background 1s ease;
+  -o-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
 #search-block-form .icon {
   position: absolute;
   top: 50%;
@@ -43,16 +57,4 @@ i.better_search {
   margin-top: 17px;
   z-index: 1;
   color: #4f5b66;
-}
-
-.form-item-search-block-form input:-webkit-input-placeholder {
-  color: #65737e;
-}
-  
-.form-item-search-block-form input:-moz-placeholder {
-  color: #65737e;
-}
- 
-.form-item-search-block-form input:-ms-input-placeholder {
-  color: #65737e;
 }

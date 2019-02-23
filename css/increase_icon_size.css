@@ -15,8 +15,9 @@ i.better_search {
   position: relative;
 }
 
-.form-item-search-block-form input.form-text {
+.form-item-search-block-form input.form-search {
   height: 3em;
+  max-width: 100%;
   background: #666;
   border: none;
   font-size: .8em;
@@ -26,6 +27,12 @@ i.better_search {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  color: #fff;
+}
+
+.form-item-search-block-form input.form-search:focus,
+.form-item-search-block-form input.form-search:active,
+.form-item-search-block-form input.form-search:hover {
   color: #fff;
 }
 
@@ -61,17 +68,17 @@ i.better_search {
  outline: none;
 }
 
-.form-item-search-block-form:hover input.form-text {
+.form-item-search-block-form:hover input.form-search {
   cursor: pointer;
   cursor: hand;
 }
 
 #search-block-form:hover .icon {
-  margin-top: .75em;
+  margin-top: .5em;
   color: #93a2ad;
-  -webkit-transform:scale(1.25); /* Safari and Chrome */
-  -moz-transform:scale(1.25); /* Firefox */
-  -ms-transform:scale(1.25); /* IE 9 */
-  -o-transform:scale(1.25); /* Opera */
-   transform:scale(1.25);
+  -webkit-transform:scale(1.5); /* Safari and Chrome */
+  -moz-transform:scale(1.5); /* Firefox */
+  -ms-transform:scale(1.5); /* IE 9 */
+  -o-transform:scale(1.5); /* Opera */
+   transform:scale(1.5);
 }

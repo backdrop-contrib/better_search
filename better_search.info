@@ -1,5 +1,5 @@
 name = Better Search Block
-description = Provides better looking theming for the Drupal search block.
+description = Provides better looking theming for the Backdrop search block.
 backdrop = 1.x
 type = module
 package = search

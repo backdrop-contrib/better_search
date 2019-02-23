@@ -15,8 +15,12 @@ i.better_search {
   white-space: nowrap;
 }
 
-.form-item-search-block-form input.form-text {
+.form-item-search-block-form input.form-search,
+.form-item-search-block-form input.form-search:focus,
+.form-item-search-block-form input.form-search:hover,
+.form-item-search-block-form input.form-search:active {
   height: 50px;
+  max-width: 100%;
   background: #2b303b; /* Search field BG */
   border: none;
   font-size: 1em;
