@@ -39,12 +39,16 @@ function better_search_form_search_block_form_alter(&$form, &$form_state, $form_
       $form['#attached']['css'][] = $path . '/css/on_hover_button.css';
       break;
   }
-
+  if (module_exists('font_awesome')) {
+    $i = '<i class="fas fa-search"></i>';
+  } else {
+    $i = '<i class="better_search"></i>';
+  }
   if ($theme == 3) {
-    $form['search_block_form']['#suffix'] = ' <button class="icon"><i class="better_search"></i></button>';
+    $form['search_block_form']['#suffix'] = ' <button class="icon">' . $i . '</button>';
   }
   else {
-    $form['search_block_form']['#prefix'] = '<div class="icon"><i class="better_search"></i></div>';
+    $form['search_block_form']['#prefix'] = '<div class="icon">' . $i . '</div>';
   }
   $form['search_block_form']['#attributes']['placeholder'] = t($config->get('placeholder_text'));
   $form['actions']['#attributes']['class'][] = 'element-invisible';
