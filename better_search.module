@@ -1,4 +1,20 @@
 <?php
+/**
+ * Provides better looking theming for the Backdrop search block.
+ */
+
+/**
+ * Implements hook_config_info().
+ */
+function better_search_config_info() {
+  // If this configuration file points to one particular file, a "name" key
+  // will display that exact string for that file.
+  $prefixes['better_search.settings'] = array(
+    'label' => t('Better Search Settings'),
+    'group' => t('Configuration'),
+  );
+  return $prefixes;
+}
 
 /**
  * Implements hook_menu().
